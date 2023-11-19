@@ -19,6 +19,7 @@ En este ejercicio, aprenderás a utilizar los comandos básicos de SQL para obte
 
 Descargar el archivo CSV desde el siguiente enlace:
 [the-movies-dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/download?datasetVersionNumber=7)
+El archivo de utilizar es `movies_metadata.csv`
 
 ## ✔️ Tareas a Realizar
 
