@@ -18,7 +18,7 @@ En este ejercicio, aprenderás a utilizar los comandos básicos de SQL para obte
 ## ⬇️ Descargar CSV luego importar en DBEAVER
 
 Descargar el archivo CSV desde el siguiente enlace:
-[the-movies-dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/download?datasetVersionNumber=7)
+[the-movies-dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/)
 El archivo de utilizar es `movies_metadata.csv`
 
 ## ✔️ Tareas a Realizar
