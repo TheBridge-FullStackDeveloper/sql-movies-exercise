@@ -20,12 +20,19 @@ FROM movies_metadata
 /*- Listar películas con una puntuación de audiencia específica o superior*/
 SELECT *
 FROM movies_metadata
-WHERE popularity >= 7.0 
+WHERE vote_average >= 7.0 
+
 /*- Contar la cantidad de películas por idioma original*/
-SELECT original_title, COUNT(*) as Titles
-GROUP BY spoken_languages;
+SELECT original_title, COUNT(*) as title
+FROM movies_metadata
+GROUP BY original_lenguages;
 
 /*- Encontrar todas las películas lanzadas en un año específico*/
+SELECT *
+FROM movies_metadata
+WHERE EXTRACT(YEAR FROM release_date(release_date, 'YYYY-MM-DD')) = 2020;
+
+
 /*- Seleccionar películas que aún no han sido lanzadas (según la columna 'status')*/
 /*- Seleccionar películas que aún no han sido lanzadas (según la columna 'status')*/
 /*- Listar las películas que pertenecen a una colección*/
