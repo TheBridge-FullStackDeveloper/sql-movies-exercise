@@ -8,7 +8,7 @@ FROM movies_metadata
 WHERE revenue = (SELECT MAX(revenue) FROM movies_metadata);
 
 -- Crear una consulta SQL que cuente el número de películas para adultos
-SELECT original_title, title, adult 
+SELECT title, adult 
 FROM movies_metadata 
 WHERE adult = true;
 
@@ -26,7 +26,7 @@ SELECT COUNT(DISTINCT original_language) FROM movies_metadata;
 -- 34
 
 -- Encontrar todas las películas lanzadas en un año específico
-SELECT title
+SELECT title, release_date
 FROM movies_metadata 
 WHERE release_date LIKE '2017%';
 
